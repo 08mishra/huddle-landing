@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <script src="https://kit.fontawesome.com/c702e6dbef.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background: url(./images/bg-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: hsl(257, 34%, 47%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #header {
+            padding: 20px;
+            align-items: flex-start;
+            display: flex;
+        }
+        
+        #img {
+            left: 0;
+        }
+        
+        #container {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            margin-top: 20px;
+        }
+        
+        #container-image {
+            height: 400px;
+        }
+        
+        #container-img {
+            height: 95%;
+            margin-top: 28px;
+        }
+        
+        #container-data {
+            height: 400px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #data-head {
+            position: absolute;
+            padding: 10px;
+            margin: auto;
+            align-items: center;
+            margin-top: 5%;
+        }
+        
+        #data-p {
+            justify-content: center;
+            text-align: left;
+            padding: 50px;
+            margin-top: 11%;
+            position: absolute;
+        }
+        
+        #button {
+            padding: 10px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            margin-left: 165px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0px 6px 11px 1px rgba(0, 0, 0, 0.55);
+            color: rgb(192, 28, 192);
+        }
+        
+        #button:hover {
+            background: hsl(300, 69%, 71%);
+        }
+        
+        @media (max-width:650px) {
+            body {
+                background: url(./images/bg-mobile.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: hsl(257, 34%, 47%);
+            }
+            #container {
+                display: flex;
+                flex-direction: column;
+            }
+            #container-data {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            #data-p {
+                margin-top: 35%;
+                text-align: center;
+            }
+            #button {
+                margin: 20px 45px;
+                margin-left: 43px;
+            }
+            #container-image {
+                height: 232px;
+            }
+            #container-img {
+                object-fit: cover;
+                width: 285px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <navbar>
+            <img id="img" alt="logo" src="./images/logo.svg">
+        </navbar>
+    </header>
+
+    <div id="container">
+        <div id="container-image">
+            <img id="container-img" src="./images/illustration-mockups.svg">
+        </div>
+        <div id="container-data">
+            <div id="data-head">
+                <h1>Build The Community Your Fans Will Love</h1>
+
+            </div>
+            <div id="data-p">
+                <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion. Register</p>
+                <button id="button">register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/08mishra">prashant</a>.
+        </p> -->
+
+
+</body>
+
+</html>
